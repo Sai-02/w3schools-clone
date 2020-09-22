@@ -9,6 +9,10 @@ font-family: 'Open Sans', sans-serif; */
   padding: 0;
   box-sizing: border-box;
 }
+/* Horizontal overflow fix*/
+body {
+  overflow-x: hidden;
+}
 
 /* header */
 .header {
@@ -187,6 +191,7 @@ Body
 
   box-shadow: 2px 2px 2px #9b9898a2;
 }
+
 @media screen and (min-width: 772px) {
   .sidebar {
     display: grid;
