@@ -8,6 +8,7 @@ font-family: 'Open Sans', sans-serif; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 /* Horizontal overflow fix*/
 body {
@@ -181,7 +182,11 @@ Body
 .container {
   width: 100vw;
   display: grid;
-  grid-template-columns: 3fr 13fr;
+}
+@media screen and (min-width: 772px) {
+  .container {
+    grid-template-columns: 3fr 13fr;
+  }
 }
 
 /* sidebar  */
@@ -216,3 +221,120 @@ Body
   background: rgba(114, 111, 111, 0.4);
   cursor: pointer;
 }
+/* end of sidebar */
+
+/* Main Content */
+.main-content {
+  padding: 10px;
+  display: grid;
+}
+.language-section {
+  padding: 15px;
+}
+
+.code-section {
+  display: none;
+  padding: 20px;
+  max-height: 400px;
+}
+.code-section h3 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  letter-spacing: 1px;
+  font-weight: normal;
+  padding-bottom: 14px;
+}
+.code-box {
+  background: white;
+  padding: 15px;
+  border-left: solid 4px rgb(85, 179, 98);
+  letter-spacing: 1px;
+}
+.tagstart {
+  color: mediumblue;
+}
+.docHtml {
+  color: red;
+}
+.html-tag {
+  color: brown;
+}
+.about-section {
+  width: 100%;
+  max-height: 400px;
+}
+.tryItYourself-container {
+  padding-top: 1rem;
+}
+.tryItYourself {
+  background: rgb(85, 179, 98);
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.tryItYourself:hover {
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2),
+    4px 4px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.learn-btn-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.about-section h1 {
+  font-size: 4rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 7px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: rgb(97, 97, 97);
+}
+.about-section p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgb(97, 97, 97);
+}
+.learn-btn {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  background: rgb(97, 97, 97);
+  color: white;
+  padding: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 5px;
+  max-width: 216px;
+}
+.learn-btn:hover {
+  color: black;
+  background: #ccc;
+}
+
+@media screen and (min-width: 772px) {
+  .code-section {
+    display: grid;
+    background: #f1f1f1f1;
+  }
+  .language-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    max-height: 900px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .language-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* End of Main Content  */
