@@ -190,6 +190,7 @@ Body
 ======================
  */
 
+/* Container of sidebar and main content */
 .container {
   width: 100vw;
   display: grid;
@@ -199,6 +200,7 @@ Body
     grid-template-columns: 3fr 13fr;
   }
 }
+/* End of container style */
 
 /* sidebar  */
 
@@ -235,6 +237,7 @@ Body
 /* end of sidebar */
 
 /* Main Content */
+
 .main-content {
   /* padding: 2rem; */
   padding-left: 2px;
@@ -242,12 +245,15 @@ Body
   /* display: grid; */
   /* row-gap: 4rem; */
 }
+
+/* Global classes for main-content section */
+
 .language-section {
   padding: 2rem;
   /* padding-left: 10px; */
   margin-top: 20px;
 }
-
+/* End of global classes for main section */
 .code-section {
   display: none;
   padding: 10px;
@@ -271,15 +277,7 @@ Body
   border-left: solid 4px rgb(85, 179, 98);
   letter-spacing: 1px;
 }
-.tagstart {
-  color: mediumblue;
-}
-.docHtml {
-  color: red;
-}
-.html-tag {
-  color: brown;
-}
+
 .about-section {
   width: 100%;
   max-height: 400px;
@@ -363,6 +361,26 @@ Body
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
   }
+}
+/* End of global classes for main-content */
+
+/* HTML section */
+
+.tagstart {
+  color: mediumblue;
+}
+.docHtml {
+  color: red;
+}
+.html-tag {
+  color: brown;
+}
+
+/* End of html section */
+
+/* CSS section */
+
+@media screen and (min-width: 992px) {
   .css-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -375,7 +393,6 @@ Body
     grid-area: a;
   }
 }
-
 .css-property-name {
   color: red;
 }
@@ -388,4 +405,6 @@ Body
 .css-section article {
   box-shadow: none;
 }
+/* End of css section */
+
 /* End of Main Content  */
