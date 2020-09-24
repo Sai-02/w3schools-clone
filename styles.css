@@ -303,14 +303,23 @@ Body
 }
 .learn-btn-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   column-gap: 10px;
+  row-gap: 10px;
   padding: 10px;
   text-align: center;
   justify-content: center;
 }
+@media screen and (min-width: 400px) {
+  .learn-btn {
+    font-size: 1rem;
+  }
+  .learn-btn-container {
+    grid-template-columns: auto auto;
+  }
+}
 .about-section h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: normal;
   text-align: center;
   padding: 7px;
@@ -328,7 +337,7 @@ Body
   background: transparent;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   background: rgb(97, 97, 97);
   color: white;
   padding: 5px;
@@ -354,6 +363,9 @@ Body
     gap: 0;
     row-gap: 2rem;
     max-height: 900px;
+  }
+  .about-section h1 {
+    font-size: 4rem;
   }
 }
 @media screen and (min-width: 992px) {
