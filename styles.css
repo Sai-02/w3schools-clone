@@ -236,11 +236,16 @@ Body
 
 /* Main Content */
 .main-content {
-  padding: 10px;
-  display: grid;
+  /* padding: 2rem; */
+  padding-left: 2px;
+  /* height: auto; */
+  /* display: grid; */
+  /* row-gap: 4rem; */
 }
 .language-section {
   padding: 2rem;
+  /* padding-left: 10px; */
+  margin-top: 20px;
 }
 
 .code-section {
@@ -295,7 +300,7 @@ Body
     4px 4px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
-.tryItYourself span{
+.tryItYourself span {
   font-size: 10px;
 }
 .learn-btn-container {
@@ -347,7 +352,9 @@ Body
   .language-section {
     display: grid;
     grid-template-columns: 1fr;
+
     gap: 0;
+    row-gap: 2rem;
     max-height: 900px;
   }
 }
@@ -356,6 +363,29 @@ Body
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
   }
+  .css-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+  }
+  .css-section .about-section {
+    grid-area: b;
+  }
+  .css-section .code-section {
+    grid-area: a;
+  }
 }
 
+.css-property-name {
+  color: red;
+}
+.css-property-value {
+  color: blue;
+}
+.css-section {
+  background: #f1f1f1f1;
+}
+.css-section article {
+  box-shadow: none;
+}
 /* End of Main Content  */
