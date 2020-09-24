@@ -28,6 +28,7 @@ body {
   color: rgb(71, 67, 67);
   font-size: 2rem;
 }
+
 .logo span {
   color: rgb(85, 179, 98);
 }
@@ -40,6 +41,16 @@ body {
   font-size: 1rem;
   border-radius: 4px;
 }
+/* Width fix for logo overflow in smaller screen*/
+@media screen and (max-width: 480px) {
+  .logo h2 {
+    font-size: 1.4rem;
+  }
+  .login-btn {
+    font-size: 0.8rem;
+  }
+}
+
 .login-btn:hover {
   cursor: pointer;
   background: rgb(67, 145, 77);
