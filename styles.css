@@ -240,13 +240,19 @@ Body
   display: grid;
 }
 .language-section {
-  padding: 15px;
+  padding: 2rem;
 }
 
 .code-section {
   display: none;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 20px;
   max-height: 400px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-box-shadow: -2px 3px 25px -5px rgba(130, 130, 130, 1);
+  -moz-box-shadow: -2px 3px 25px -5px rgba(130, 130, 130, 1);
+  box-shadow: -2px 3px 25px -5px rgba(130, 130, 130, 1);
 }
 .code-section h3 {
   font-family: "Segoe UI", Arial, sans-serif;
@@ -256,7 +262,7 @@ Body
 }
 .code-box {
   background: white;
-  padding: 15px;
+  padding: 25px;
   border-left: solid 4px rgb(85, 179, 98);
   letter-spacing: 1px;
 }
@@ -288,6 +294,9 @@ Body
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2),
     4px 4px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+}
+.tryItYourself span{
+  font-size: 10px;
 }
 .learn-btn-container {
   display: grid;
@@ -345,6 +354,7 @@ Body
 @media screen and (min-width: 992px) {
   .language-section {
     grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
   }
 }
 
