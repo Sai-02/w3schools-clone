@@ -209,6 +209,10 @@ Body
 
   box-shadow: 2px 2px 2px #9b9898a2;
 }
+.sidebar-content {
+  display: grid;
+  max-height: 2100px;
+}
 
 @media screen and (min-width: 772px) {
   .sidebar {
