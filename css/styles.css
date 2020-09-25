@@ -336,7 +336,7 @@ Body
   border: none;
   background: transparent;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
   /* font-size: 1rem; */
   background: rgb(97, 97, 97);
   color: white;
@@ -511,6 +511,9 @@ Body
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: gray;
 }
+.library-section .learn-btn {
+  justify-self: center;
+}
 @media screen and (min-width: 992px) {
   .library-section {
     grid-template-columns: repeat(3, 1fr);
@@ -522,34 +525,142 @@ Body
     font-size: 2.5rem;
   }
 }
+.w3css h1 {
+  text-transform: uppercase;
+}
 .w3css,
 .bootstrap,
 .color-picker {
   display: grid;
-  place-items: center;
+  justify-content: center;
+  align-items: flex-start;
   /* align-items: center; */
   row-gap: 1.5rem;
 }
+
 .bootstrap .learn-btn-container {
   grid-template-columns: 1fr;
 }
 .color-picker-image {
-  /* position: relative; */
-  /* background: rgba(130, 130, 130, 1); */
   height: 100%;
   width: 100%;
 }
 .color-picker-image-container {
-  /* background: rgba(130, 130, 130, 1); */
-  /* position: relative; */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
-.color-picker-image-container :hover .color-picker-image {
-  opacity: 0.5;
+
+.color-picker-image-container :hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
-/* .color-picker-image :hover{
-  opacity: 0.5;
-} */
 
 /* End of Library Section */
+
+/* Exercises Section */
+.exercises-section {
+  background: rgb(97, 97, 97);
+  color: white;
+  /* text-align: center; */
+  display: grid;
+  /* place-items: center; */
+  /* justify-content: center; */
+  align-items: center;
+  /* place-items: center; */
+
+  row-gap: 2rem;
+  padding: 2rem 1rem;
+}
+.exercises-section h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: lighter;
+  justify-self: center;
+}
+.exercises-section p {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  justify-self: center;
+}
+
+.php,
+.java,
+.jQuery,
+.cplus,
+.csharp {
+  display: none;
+}
+.exercises-btn-container {
+  padding: 2rem;
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+@media screen and (min-width: 600px) {
+  .exercises-btn-container {
+    grid-template-areas:
+      "a a a a a b b b b b c c c c c "
+      "d d d e e e f f f g g g h h h";
+    /* grid-template-columns: ; */
+  }
+  .html-exercise {
+    grid-area: a;
+  }
+  .css-exercise {
+    grid-area: b;
+  }
+  .js-exercise {
+    grid-area: c;
+  }
+  .sql-exercise {
+    grid-area: d;
+    display: block;
+  }
+  .python-exercise {
+    grid-area: e;
+    display: block;
+  }
+  .php {
+    grid-area: f;
+    display: block;
+  }
+  .jQuery {
+    grid-area: g;
+    display: block;
+  }
+  .java {
+    grid-area: h;
+    display: block;
+  }
+  .tryItYourself span {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .exercises-btn-container {
+    grid-template-areas:
+      "a a a a a a a b b b b b b b c c c c c c c"
+      "d d d e e e f f f g g g h h h i i i j j j";
+    column-gap: 1rem;
+  }
+  .exercises-section .tryItYourself {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .hide {
+    font-size: 1rem;
+  }
+  .cplus {
+    display: block;
+    grid-area: i;
+  }
+  .csharp {
+    display: block;
+    grid-area: j;
+  }
+}
+
+/* End of Exwercises Section */
 
 /* End of Main Content  */
