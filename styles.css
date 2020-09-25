@@ -419,4 +419,33 @@ Body
 }
 /* End of css section */
 
+/* SQL section */
+.blue{
+  color: blue;
+}
+.brown{
+  color: brown;
+}
+@media screen and (min-width: 992px) {
+  .sql-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+  }
+  .sql-section .about-section {
+    grid-area: b;
+  }
+  .sql-section .code-section {
+    grid-area: a;
+  }
+}
+.sql-section {
+  background: #f1f1f1f1;
+}
+.sql-section article {
+  box-shadow: none;
+}
+
+/* End of SQL section */
+
 /* End of Main Content  */
