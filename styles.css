@@ -349,6 +349,7 @@ Body
 .learn-btn:hover {
   color: black;
   background: #ccc;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 772px) {
@@ -420,10 +421,10 @@ Body
 /* End of css section */
 
 /* SQL section */
-.blue{
+.blue {
   color: blue;
 }
-.brown{
+.brown {
   color: brown;
 }
 @media screen and (min-width: 992px) {
@@ -447,5 +448,47 @@ Body
 }
 
 /* End of SQL section */
+
+/* Learn php,python,java,jQuery */
+.learn-boxes {
+  background: rgb(97, 97, 97);
+  display: grid;
+  row-gap: 2rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.learn-box {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  row-gap: 1rem;
+}
+.learn-box .learn-btn {
+  margin-top: 10px;
+}
+@media screen and (min-width: 992px) {
+  .learn-boxes {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    /* height: 100vh; */
+  }
+  .learn-box h2 {
+    font-size: 2rem;
+    color: rgb(68, 70, 60);
+  }
+  .learn-box p {
+    font-size: larger;
+  }
+}
+.learn-box p {
+  color: rgb(97, 97, 97);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* End of Learn boxes */
 
 /* End of Main Content  */
