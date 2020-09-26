@@ -691,9 +691,7 @@ Body
   place-items: center;
 }
 .template-img {
-  /* display: grid; */
-  /* place-items: center; */
-  max-width: 700px;
+  max-width: 70vw;
 }
 .template-section .learn-btn {
   justify-self: center;
