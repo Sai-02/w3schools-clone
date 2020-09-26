@@ -601,12 +601,18 @@ Body
   row-gap: 2rem;
   column-gap: 2rem;
 }
+
+.sql-exercise span {
+  font-size: 1rem;
+}
+.python-exercise span {
+  font-size: 1rem;
+}
 @media screen and (min-width: 600px) {
   .exercises-btn-container {
     grid-template-areas:
       "a a a a a b b b b b c c c c c "
       "d d d e e e f f f g g g h h h";
-    /* grid-template-columns: ; */
   }
   .html-exercise {
     grid-area: a;
@@ -652,9 +658,7 @@ Body
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  .hide {
-    font-size: 1rem;
-  }
+
   .cplus {
     display: block;
     grid-area: i;
@@ -665,7 +669,7 @@ Body
   }
 }
 
-/* End of Exwercises Section */
+/* End of Exercises Section */
 
 /* Template Section */
 .template-section {
