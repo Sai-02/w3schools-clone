@@ -700,7 +700,35 @@ Body
 .template-section .learn-btn {
   justify-self: center;
 }
+.template-section button {
+  width: 50vw;
+}
 
 /* End of Template Section */
 
+/* How to section */
+.how-to-section {
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  row-gap: 1rem;
+}
+.how-to-section h1 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: rgb(97, 97, 97);
+  text-align: center;
+}
+.how-to-section p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: rgb(71, 67, 67);
+  text-align: center;
+}
+.how-to-section button {
+  width: 50vw;
+}
+
+/* End of How to section */
 /* End of Main Content  */
