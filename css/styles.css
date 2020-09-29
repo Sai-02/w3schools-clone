@@ -756,55 +756,123 @@ Body
   display: grid;
   row-gap: 1rem;
 }
-.certificate-heading-container h1{
+.certificate-heading-container h1 {
   font-size: 2rem;
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: lighter;
-
 }
-.certificate-heading-container h6{
+.certificate-heading-container h6 {
   font-size: 1rem;
   text-align: center;
-  
 }
-.certificate-heading-container{
+.certificate-heading-container {
   padding-top: 3rem;
   padding-bottom: 3rem;
   width: 100%;
 }
-.certificate-btn-container{
+.certificate-btn-container {
   text-align: center;
 }
-.certificate-btn-container button{
+.certificate-btn-container button {
   padding: 1rem;
-  
 }
-.certificate-btn-container button:hover{
+.certificate-btn-container button:hover {
   background: white;
   color: black;
 }
-@media screen and (min-width:600px){
-  .certificate-heading-container{
+@media screen and (min-width: 600px) {
+  .certificate-heading-container {
     background: rgba(0, 0, 0, 0.19);
   }
 }
-.space-filler{
+.space-filler {
   min-height: 150px;
 }
-@media screen and (min-width:992px){
-  .certificate-section-container{
+@media screen and (min-width: 992px) {
+  .certificate-section-container {
     background: black;
     display: flex;
     justify-content: center;
-
   }
-  .certificate-section{
+  .certificate-section {
     width: 80%;
   }
-
 }
 
-
 /* End of Certificate Section */
+
+/* footer */
+.footer {
+  background: rgb(97, 97, 97);
+  padding: 2rem;
+  padding-top: 2rem;
+  display: grid;
+  row-gap: 2rem;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  align-self: center;
+}
+.btn-forum {
+  display: grid;
+  /* grid-template-columns: 1fr auto; */
+}
+.footer-btn {
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.986);
+  color: rgb(97, 97, 97);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  margin: 2px;
+}
+.footer-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-btn:hover {
+  cursor: pointer;
+  background: rgb(255, 255, 255, 0.8);
+}
+.hover-green {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+.hover-green:hover {
+  color: rgb(67, 145, 77);
+  cursor: pointer;
+}
+.btn-forum {
+  display: grid;
+  row-gap: 1rem;
+}
+.footer-content {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.like {
+  color: white;
+  justify-self: center;
+  font-size: 2rem;
+}
+.footer .tryItYourself {
+  max-width: 300px;
+  justify-self: center;
+}
+@media screen and (min-width: 992px) {
+  .btn-forum {
+    grid-template-columns: 1fr auto;
+  }
+  .footer-btn-container {
+    justify-content: start;
+  }
+}
+
+/* End of footer */
 /* End of Main Content  */
