@@ -182,6 +182,92 @@ Navbar
     margin: 0;
   }
 }
+
+/* Login btn window */
+
+.login-window {
+  background: #f1f1f1;
+  display: grid;
+  text-align: center;
+  row-gap: 1rem;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  padding-bottom: 1rem;
+  display: none;
+  -webkit-box-shadow: 1px 5px 19px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 5px 19px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 5px 19px -4px rgba(0, 0, 0, 0.75);
+}
+.close-btn-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.close-btn-icon {
+  right: 0;
+  top: 0;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.close-btn:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+.login-window h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  /* color: rgb(97, 97, 97); */
+  font-family: "Times New Roman", Times, serif;
+}
+.login-window p {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.login-window p:hover {
+  cursor: pointer;
+}
+.login-form {
+  display: grid;
+  place-items: center;
+  justify-self: center;
+
+  text-align: center;
+  width: 80vw;
+  max-width: 800px;
+  grid-template-columns: 1fr;
+
+  /* width: 800px; */
+}
+.username {
+  font-size: 1.3rem;
+  padding: 1rem;
+  max-width: 700px;
+  min-width: 100%;
+  /* text-align: start; */
+  justify-content: center;
+}
+.login-form .tryItYourself {
+  border-radius: 4px;
+  text-transform: capitalize;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.username p {
+  text-align: start;
+  text-decoration: none;
+}
+.email-input {
+  /* min-width: 80vw; */
+  width: 100%;
+  /* text-align: center; */
+  /* line-height: 2rem; */
+  padding: 4px;
+  font-size: 1.3rem;
+}
+
+/* End of login btn window */
+
 /* 
 ======================
 
@@ -194,6 +280,7 @@ Body
 .container {
   width: 100vw;
   display: grid;
+  position: relative;
 }
 @media screen and (min-width: 772px) {
   .container {

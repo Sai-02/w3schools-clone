@@ -10,8 +10,8 @@
       crossorigin="anonymous"
     ></script> -->
     <script src="./fontawesome/js/fontawesome.js"></script>
-    <link rel="stylesheet" href="./fontawesome/css/font-awesome.css">
-    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css" />
   </head>
   <body>
     <!-- header section  -->
@@ -24,7 +24,7 @@
         <h5>THE WORLD'S LARGEST WEB DEVELOPER SITE</h5>
       </article>
       <article class="login">
-        <button class="login-btn">log in</button>
+        <button class="login-btn" id="login-btn">log in</button>
       </article>
     </header>
 
@@ -69,6 +69,45 @@
     </nav>
 
     <!-- End of Navbar  -->
+
+
+    
+    <!-- Login btn window -->
+    <div class="login-window" id="login-window">
+      <div class="close-btn-container">
+        <div class="close-btn close-login-window" id="close-login-window">
+          <i class="fas fa-close close-btn-icon"></i>
+        </div>
+      </div>
+      <h1>log in</h1>
+      <p>Why log in?</p>
+      <form class="login-form">
+        <div class="username">
+          <p>Username</p>
+
+          <input
+            type="email"
+            placeholder="Enter your e-mail address"
+            class="email-input"
+          />
+        </div>
+        <div class="password username">
+          <p>password</p>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            class="email-input"
+          />
+        </div>
+        <div class="tryItYourself-btn-container">
+          <button class="tryItYourself">log in</button>
+        </div>
+      </form>
+
+      <p class="new-user">New User? <span>sign up for free</span></p>
+      <p class="forgot-password">Forgot password?</p>
+    </div>
+    <!-- End of Login window btn -->
 
     <!-- Body  -->
     <div class="container">

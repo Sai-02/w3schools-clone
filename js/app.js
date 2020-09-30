@@ -18,7 +18,6 @@ function changeTheme() {
       b[i].style.backgroundColor = "white";
       b[i].style.color = "black";
       b[i].style.borderLeft = "solid 4px rgb(85, 179, 98)";
-      
     }
     for (let i = 0; i < tagStart.length; i++) {
       tagStart[i].style.color = "mediumblue";
@@ -68,5 +67,22 @@ function changeTheme() {
     for (let i = 0; i < blue.length; i++) {
       blue[i].style.color = "#80b6ff";
     }
+  }
+}
+
+// Login window pop up effect
+
+document.getElementById("login-btn").addEventListener("click", ShowLoginWindow);
+document
+  .getElementById("close-login-window")
+  .addEventListener("click", ShowLoginWindow);
+let login_check = 0;
+function ShowLoginWindow() {
+  let loginWindow = document.getElementById("login-window");
+  if (loginWindow.style.display == "none" || login_check == 0) {
+    loginWindow.style.display = "grid";
+    login_check = 1;
+  } else {
+    loginWindow.style.display = "none";
   }
 }
