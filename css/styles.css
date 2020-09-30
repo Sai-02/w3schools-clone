@@ -8,7 +8,7 @@ font-family: 'Open Sans', sans-serif; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 /* Horizontal overflow fix*/
 body {
@@ -24,7 +24,7 @@ body {
   width: 100vw;
 }
 .logo h2 {
-  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-family: "Open Sans Semi Expanded", sans-serif;
   color: rgb(71, 67, 67);
   font-size: 2rem;
 }
@@ -96,7 +96,7 @@ Navbar
 ================================= 
 */
 .navbar {
-  background: rgb(85, 179, 98);
+  background: rgb(35, 179, 98);
   /* padding-top: 1rem;
     padding-bottom: 1rem; */
   width: 100vw;
@@ -116,9 +116,9 @@ Navbar
   border: none;
   background: transparent;
   color: white;
-  font-size: 1.2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .nav-btn-container {
@@ -256,6 +256,7 @@ Navbar
 .username p {
   text-align: start;
   text-decoration: none;
+  justify-content: centre;
 }
 .email-input {
   /* min-width: 80vw; */
