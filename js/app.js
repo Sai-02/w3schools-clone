@@ -17,6 +17,8 @@ function changeTheme() {
     for (let i = 0; i < b.length; i++) {
       b[i].style.backgroundColor = "white";
       b[i].style.color = "black";
+      b[i].style.borderLeft = "solid 4px rgb(85, 179, 98)";
+      
     }
     for (let i = 0; i < tagStart.length; i++) {
       tagStart[i].style.color = "mediumblue";
@@ -43,6 +45,7 @@ function changeTheme() {
     for (let i = 0; i < b.length; i++) {
       b[i].style.backgroundColor = "rgb(40,44,52)";
       b[i].style.color = "white";
+      b[i].style.borderLeft = "none";
     }
     for (let i = 0; i < tagStart.length; i++) {
       tagStart[i].style.color = "#88c999";
