@@ -87,5 +87,21 @@ function ShowLoginWindow() {
   }
 }
 
-//Tutorial Window Pop up effect 
+//Tutorial Window Pop up effect
 
+document
+  .getElementById("tutorial-window-open")
+  .addEventListener("click", ShowTutorialWindow);
+document
+  .getElementById("close-tutorial-window")
+  .addEventListener("click", ShowTutorialWindow);
+let tutorial_check = 0;
+function ShowTutorialWindow() {
+  let tutorialWindow = document.getElementById("tutorial-window");
+  if (tutorialWindow.style.display == "none" || tutorial_check == 0) {
+    tutorialWindow.style.display = "grid";
+    tutorial_check = 1;
+  } else {
+    tutorialWindow.style.display = "none";
+  }
+}
