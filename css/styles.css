@@ -105,6 +105,9 @@ Navbar
 .nav-list li {
   display: none;
 }
+.nav-list li:hover {
+  cursor: pointer;
+}
 .dark-btn-container {
   display: none;
 }
