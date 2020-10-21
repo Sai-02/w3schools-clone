@@ -86,3 +86,6 @@ function ShowLoginWindow() {
     loginWindow.style.display = "none";
   }
 }
+
+//Tutorial Window Pop up effect 
+
