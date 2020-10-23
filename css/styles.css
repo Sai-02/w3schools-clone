@@ -272,8 +272,15 @@ Navbar
 
 /* End of login btn window */
 
-/* Tutorial window */
-.tutorial-window {
+/* 
+======================================
+
+General styling for  different windows
+
+======================================
+ */
+
+.window {
   background: #f1f1f1;
   /* padding-left: 1rem; */
   display: none;
@@ -281,6 +288,31 @@ Navbar
   z-index: 2;
   width: 100%;
 }
+.window-list-container {
+  padding: 2rem;
+  padding-top: 0;
+}
+.window h1 {
+  padding-bottom: 10px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+}
+.window-list {
+  display: grid;
+}
+.window-list-items {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 1.1rem;
+}
+.window-list-items:hover {
+  cursor: pointer;
+  background: rgba(114, 111, 111, 0.4);
+}
+
+/* End of general styling for different windows */
+
+/* Tutorial window */
 .tutorial-window-lists-container {
   display: grid;
   grid-template-areas:
@@ -311,27 +343,6 @@ Navbar
 }
 .xmlList {
   grid-area: d;
-}
-.tutorial-window article {
-  padding: 2rem;
-  padding-top: 0;
-}
-.tutorial-window h1 {
-  padding-bottom: 10px;
-  font-weight: lighter;
-  letter-spacing: 0.5px;
-}
-.tutorial-window-list {
-  display: grid;
-}
-.tutorial-window-list-items {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  font-size: 1.1rem;
-}
-.tutorial-window-list-items:hover {
-  cursor: pointer;
-  background: rgba(114, 111, 111, 0.4);
 }
 
 /* End of Tutorial Window */
