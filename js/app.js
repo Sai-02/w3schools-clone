@@ -96,12 +96,15 @@ document
   .getElementById("close-tutorial-window")
   .addEventListener("click", ShowTutorialWindow);
 let tutorial_check = 0;
+let tutorialIcon = document.getElementById("tutorial-window-icon");
 function ShowTutorialWindow() {
   let tutorialWindow = document.getElementById("tutorial-window");
   if (tutorialWindow.style.display == "none" || tutorial_check == 0) {
     tutorialWindow.style.display = "grid";
     tutorial_check = 1;
+    tutorialIcon.className = "fas fa-caret-up";
   } else {
     tutorialWindow.style.display = "none";
+    tutorialIcon.className = "fas fa-caret-down";
   }
 }
