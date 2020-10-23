@@ -44,8 +44,11 @@
             ><i class="fas fa-caret-down" id="tutorial-window-icon"></i
           ></span>
         </li>
-        <li>
-          references <span><i class="fas fa-caret-down"></i></span>
+        <li id="reference-window-open">
+          references
+          <span
+            ><i class="fas fa-caret-down" id="reference-window-icon"></i
+          ></span>
         </li>
         <li>
           examples <span><i class="fas fa-caret-down"></i></span>
@@ -297,6 +300,192 @@
     <!-- End of tutorial window -->
 
     <!-- Reference Window -->
+
+    <div class="reference-window window" id="reference-window">
+      <div class="close-btn-container">
+        <div
+          class="close-btn close-reference-window"
+          id="close-reference-window"
+        >
+          <i class="fas fa-times close-btn-icon"></i>
+        </div>
+      </div>
+      <div class="reference-window-lists-container window-lists-container">
+        <!-- HTML Reference List -->
+        <article class="html-reference-list window-list-container">
+          <h1>HTML</h1>
+          <ul class="reference-window-list window-list">
+            <li class="window-list-items reference-window-list-items">
+              HTML Tag Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Browser Support
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Event Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Color Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Attribute Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Canvas Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML SVG Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              Google Maps Reference
+            </li>
+          </ul>
+        </article>
+        <!-- End of HTML Reference List -->
+
+        <!-- CSS Reference List -->
+        <article class="css-reference-list window-list-container">
+          <h1>CSS</h1>
+          <ul class="reference-window-list window-list">
+            <li class="window-list-items reference-window-list-items">
+              CSS Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              CSS Browser Support
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              CSS Selector Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              Bootstrap 3
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              Bootstrap 4
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              W3.CSS Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              Icons Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              Sass Reference
+            </li>
+          </ul>
+        </article>
+        <!-- End of CSS Reference List -->
+
+        <!-- Javascript Reference List -->
+        <article class="javascript-reference-list window-list-container">
+          <h1>JavaScript</h1>
+          <ul class="window-list reference-window-list">
+            <li class="reference-window-list-items window-list-items">
+              JavaScript Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              JS DOM Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              jQuery Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              AngularJS Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              AppML Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              W3.JS Reference
+            </li>
+          </ul>
+        </article>
+
+        <!-- End of Javascript Reference List -->
+
+        <!-- Programming Reference List -->
+        <article class="programming-reference-list window-list-container">
+          <h1>Programming</h1>
+          <ul class="reference-window-list window-list">
+            <li class="reference-window-list-items window-list-items">
+              Python Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              Java Reference
+            </li>
+          </ul>
+        </article>
+        <!-- End Of Programming Reference  List -->
+
+        <!-- Server Side Reference List -->
+        <article class="window-list-container server-side-reference-list">
+          <h1>Server Side</h1>
+          <ul class="reference-window-list window-list">
+            <li class="reference-window-list-items window-list-items">
+              SQL Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              PHP Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              ASP Reference
+            </li>
+          </ul>
+        </article>
+
+        <!-- End of Server Side List -->
+
+        <!-- XML Reference List -->
+        <article class="window-list-container xml-reference-list">
+          <h1>XML</h1>
+          <ul class="reference-window-list window-list">
+            <li class="reference-window-list-items window-list-items">
+              XML DOM Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              XML http Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              XSLT Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              XML Schema Reference
+            </li>
+          </ul>
+        </article>
+
+        <!-- End of XML Reference List -->
+
+        <!-- Character Sets Reference List -->
+        <article class="window-list-container character-set-reference-list">
+          <h1>Character Sets</h1>
+          <ul class="window-list reference-window-list">
+            <li class="window-list-items reference-window-list-items">
+              HTML Character Sets
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML ASCII
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML ANSI
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Windows-1252
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML ISO
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Symbols
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML UTF-8
+            </li>
+          </ul>
+        </article>
+
+        <!--End  of Character Sets Reference List -->
+      </div>
+    </div>
 
     <!-- End of Reference Window -->
 

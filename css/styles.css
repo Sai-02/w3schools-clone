@@ -347,6 +347,41 @@ General styling for  different windows
 
 /* End of Tutorial Window */
 
+/* Reference Window */
+.reference-window-lists-container {
+  display: grid;
+  gap: 0;
+  grid-template-areas:
+    "a b c d"
+    "a b e d"
+    "a h e f"
+    "g h e f"
+    "g h e f";
+}
+.html-reference-list {
+  grid-area: a;
+}
+.css-reference-list {
+  grid-area: g;
+}
+.javascript-reference-list {
+  grid-area: b;
+}
+.programming-reference-list {
+  grid-area: h;
+}
+.xml-reference-list {
+  grid-area: e;
+}
+.server-side-reference-list {
+  grid-area: c;
+}
+.character-set-reference-list {
+  grid-area: d;
+}
+
+/* End of Reference Window */
+
 /* 
 ======================
 

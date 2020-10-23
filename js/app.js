@@ -108,3 +108,25 @@ function ShowTutorialWindow() {
     tutorialIcon.className = "fas fa-caret-down";
   }
 }
+
+//Reference Window Pop up effect
+
+document
+  .getElementById("reference-window-open")
+  .addEventListener("click", ShowReferenceWindow);
+document
+  .getElementById("close-reference-window")
+  .addEventListener("click", ShowReferenceWindow);
+let reference_check = 0;
+let referenceIcon = document.getElementById("reference-window-icon");
+function ShowReferenceWindow() {
+  let referenceWindow = document.getElementById("reference-window");
+  if (referenceWindow.style.display == "none" || reference_check == 0) {
+    referenceWindow.style.display = "grid";
+    reference_check = 1;
+    referenceIcon.className = "fas fa-caret-up";
+  } else {
+    referenceWindow.style.display = "none";
+    referenceIcon.className = "fas fa-caret-down";
+  }
+}
