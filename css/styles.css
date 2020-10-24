@@ -354,7 +354,7 @@ General styling for  different windows
   grid-template-areas:
     "a b c d"
     "a b e d"
-    "a h e f"
+    "a b e f"
     "g h e f"
     "g h e f";
 }
@@ -381,6 +381,39 @@ General styling for  different windows
 }
 
 /* End of Reference Window */
+
+/* Examples Window */
+
+.examples-window-lists-container {
+  display: grid;
+  gap: 0;
+  grid-template-areas:
+    "a b c d"
+    "a b e d"
+    "a f e d"
+    "a f e d"
+    "a f e d";
+}
+.htmlCssExamples {
+  grid-area: a;
+}
+.javaScriptExamples {
+  grid-area: b;
+}
+.programmingExamples {
+  grid-area: f;
+}
+.quizzes {
+  grid-area: d;
+}
+.xmlExamples {
+  grid-area: e;
+}
+.serverSideExamlpes {
+  grid-area: c;
+}
+
+/* End of Examples Window */
 
 /* 
 ======================

@@ -130,3 +130,25 @@ function ShowReferenceWindow() {
     referenceIcon.className = "fas fa-caret-down";
   }
 }
+
+// Examples Window pop-up effect
+
+document
+  .getElementById("examples-window-open")
+  .addEventListener("click", ShowExamplesWindow);
+document
+  .getElementById("close-examples-window")
+  .addEventListener("click", ShowExamplesWindow);
+let examples_check = 0;
+let examplesIcon = document.getElementById("examples-window-icon");
+function ShowExamplesWindow() {
+  let examplesWindow = document.getElementById("examples-window");
+  if (examplesWindow.style.display == "none" || examples_check == 0) {
+    examplesWindow.style.display = "grid";
+    examples_check = 1;
+    examplesIcon.className = "fas fa-caret-up";
+  } else {
+    examplesWindow.style.display = "none";
+    examplesIcon.className = "fas fa-caret-down";
+  }
+}
