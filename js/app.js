@@ -152,3 +152,25 @@ function ShowExamplesWindow() {
     examplesIcon.className = "fas fa-caret-down";
   }
 }
+
+// Exercises Window pop up Effect
+
+document
+  .getElementById("exercises-window-open")
+  .addEventListener("click", ShowExercisesWindow);
+document
+  .getElementById("close-exercises-window")
+  .addEventListener("click", ShowExercisesWindow);
+let exercises_check = 0;
+let exercisesIcon = document.getElementById("exercises-window-icon");
+function ShowExercisesWindow() {
+  let exercisesWindow = document.getElementById("exercises-window");
+  if (exercisesWindow.style.display == "none" || exercises_check == 0) {
+    exercisesWindow.style.display = "grid";
+    exercises_check = 1;
+    exercisesIcon.className = "fas fa-caret-up";
+  } else {
+    exercisesWindow.style.display = "none";
+    exercisesIcon.className = "fas fa-caret-down";
+  }
+}

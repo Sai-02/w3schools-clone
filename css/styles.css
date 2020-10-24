@@ -415,6 +415,14 @@ General styling for  different windows
 
 /* End of Examples Window */
 
+/* Exercises Window */
+.exercises-window-lists-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* End of Exercises Window */
+
 /* 
 ======================
 
