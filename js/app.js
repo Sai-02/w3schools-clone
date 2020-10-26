@@ -196,3 +196,23 @@ function closeAllWindow() {
     console.log(allWindowIcon);
   }
 }
+
+// Nav-menu open and close for smaller screen
+
+document
+  .getElementById("navbar-btn-container")
+  .addEventListener("click", ShowNavMenu);
+document
+  .getElementById("close-nav-menu")
+  .addEventListener("click", ShowNavMenu);
+let navMenu_check = 0;
+
+function ShowNavMenu() {
+  let navMenu = document.getElementById("nav-menu-small");
+  if (navMenu.style.display == "none" || navMenu_check == 0) {
+    navMenu.style.display = "grid";
+    navMenu_check = 1;
+  } else {
+    navMenu.style.display = "none";
+  }
+}

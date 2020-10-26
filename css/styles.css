@@ -130,6 +130,7 @@ Navbar
 }
 .nav-btn-container :hover {
   background: white;
+  cursor: pointer;
 }
 .nav-btn-container:hover .nav-btn {
   color: black;
@@ -185,6 +186,45 @@ Navbar
     margin: 0;
   }
 }
+
+/* 
+============================
+
+Navbar menu for smaller screen 
+
+============================
+ */
+.nav-menu-small {
+  background: #f1f1f1;
+  padding-bottom: 2rem;
+  display: none;
+}
+.nav-menu-list-container{
+  width: 100%;
+  text-align: center;
+  
+}
+.nav-menu-lists-container {
+  display: grid;
+  place-items: center;
+  /* row-gap: 1rem; */
+}
+.nav-menu-list-container h3 {
+  font-size: 1.1rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 100%;
+   padding: 0.5rem 0;
+}
+.nav-menu-list-container h3:hover {
+  background: rgba(114, 111, 111, 0.4);
+  cursor: pointer;
+}
+.nav-menu-list-container span {
+  align-items: center;
+}
+/* End of Navbar menu for smaller screen */
 
 /* Login btn window */
 
