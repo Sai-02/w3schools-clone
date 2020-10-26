@@ -199,10 +199,9 @@ Navbar menu for smaller screen
   padding-bottom: 2rem;
   display: none;
 }
-.nav-menu-list-container{
+.nav-menu-list-container {
   width: 100%;
   text-align: center;
-  
 }
 .nav-menu-lists-container {
   display: grid;
@@ -215,7 +214,7 @@ Navbar menu for smaller screen
   letter-spacing: 3px;
   text-transform: uppercase;
   width: 100%;
-   padding: 0.5rem 0;
+  padding: 0.5rem 0;
 }
 .nav-menu-list-container h3:hover {
   background: rgba(114, 111, 111, 0.4);
