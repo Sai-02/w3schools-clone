@@ -186,6 +186,7 @@ function ShowExercisesWindow() {
 function closeAllWindow() {
   let allWindow = document.querySelectorAll(".window");
   let allWindowIcon = document.querySelectorAll(".window-icon");
+  document.getElementById("login-window").style.display = "none";
   for (let i = 0; i < allWindow.length; i++) {
     allWindow[i].style.display = "none";
   }
