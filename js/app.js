@@ -80,6 +80,7 @@ let login_check = 0;
 function ShowLoginWindow() {
   let loginWindow = document.getElementById("login-window");
   if (loginWindow.style.display == "none" || login_check == 0) {
+    closeAllWindow();
     loginWindow.style.display = "grid";
     login_check = 1;
   } else {
@@ -97,15 +98,17 @@ document
   .addEventListener("click", ShowTutorialWindow);
 let tutorial_check = 0;
 let tutorialIcon = document.getElementById("tutorial-window-icon");
+
 function ShowTutorialWindow() {
   let tutorialWindow = document.getElementById("tutorial-window");
   if (tutorialWindow.style.display == "none" || tutorial_check == 0) {
+    closeAllWindow();
     tutorialWindow.style.display = "grid";
     tutorial_check = 1;
-    tutorialIcon.className = "fas fa-caret-up";
+    tutorialIcon.className = "fas fa-caret-up window-icon";
   } else {
     tutorialWindow.style.display = "none";
-    tutorialIcon.className = "fas fa-caret-down";
+    tutorialIcon.className = "fas fa-caret-down window-icon";
   }
 }
 
@@ -122,12 +125,13 @@ let referenceIcon = document.getElementById("reference-window-icon");
 function ShowReferenceWindow() {
   let referenceWindow = document.getElementById("reference-window");
   if (referenceWindow.style.display == "none" || reference_check == 0) {
+    closeAllWindow();
     referenceWindow.style.display = "grid";
     reference_check = 1;
-    referenceIcon.className = "fas fa-caret-up";
+    referenceIcon.className = "fas fa-caret-up window-icon";
   } else {
     referenceWindow.style.display = "none";
-    referenceIcon.className = "fas fa-caret-down";
+    referenceIcon.className = "fas fa-caret-down window-icon";
   }
 }
 
@@ -144,12 +148,13 @@ let examplesIcon = document.getElementById("examples-window-icon");
 function ShowExamplesWindow() {
   let examplesWindow = document.getElementById("examples-window");
   if (examplesWindow.style.display == "none" || examples_check == 0) {
+    closeAllWindow();
     examplesWindow.style.display = "grid";
     examples_check = 1;
-    examplesIcon.className = "fas fa-caret-up";
+    examplesIcon.className = "fas fa-caret-up window-icon";
   } else {
     examplesWindow.style.display = "none";
-    examplesIcon.className = "fas fa-caret-down";
+    examplesIcon.className = "fas fa-caret-down window-icon";
   }
 }
 
@@ -166,11 +171,27 @@ let exercisesIcon = document.getElementById("exercises-window-icon");
 function ShowExercisesWindow() {
   let exercisesWindow = document.getElementById("exercises-window");
   if (exercisesWindow.style.display == "none" || exercises_check == 0) {
+    closeAllWindow();
     exercisesWindow.style.display = "grid";
     exercises_check = 1;
-    exercisesIcon.className = "fas fa-caret-up";
+    exercisesIcon.className = "fas fa-caret-up window-icon";
   } else {
     exercisesWindow.style.display = "none";
-    exercisesIcon.className = "fas fa-caret-down";
+    exercisesIcon.className = "fas fa-caret-down window-icon";
+  }
+}
+
+//Close all Windows
+
+function closeAllWindow() {
+  let allWindow = document.querySelectorAll(".window");
+  let allWindowIcon = document.querySelectorAll(".window-icon");
+  for (let i = 0; i < allWindow.length; i++) {
+    allWindow[i].style.display = "none";
+  }
+  for (let i = 0; i < allWindowIcon.length; i++) {
+    allWindowIcon[i].className = "fas fa-caret-down window-icon";
+    console.log(allWindowIcon[i].className);
+    console.log(allWindowIcon);
   }
 }
